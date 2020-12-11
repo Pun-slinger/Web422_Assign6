@@ -15,7 +15,7 @@
                     <tr *ngFor="let BlogPost of blogPosts">
                         <td (click)="rowClicked($event,BlogPost._id)">{{BlogPost.title}}</td>
                         <td (click)="rowClicked($event,BlogPost._id)">{{BlogPost.postDate |date:'mediumDate'}}</td>
-                        <td (click)="rowClicked($event,BlogPost._id)">BlogPost.category</td>
+                        <td (click)="rowClicked($event,BlogPost._id)">{{BlogPost.category}}</td>
                     </tr>
                 </tbody>
             </table>
